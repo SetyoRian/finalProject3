@@ -3,8 +3,13 @@
   "version": "1.0.0",
   "description": "Final Project 3 Hacktiv8",
   "main": "index.js",
+  "engines": {
+    "node": "~16.17.0",
+    "npm": "~8.15.0"
+  },
   "scripts": {
     "develop": "nodemon index.js",
+    "build": "NODE_ENV=production npx sequelize db:migrate",
     "start": "NODE_ENV=production & node index.js"
   },
   "author": "Group 9",
